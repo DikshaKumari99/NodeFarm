@@ -21,7 +21,7 @@ function replace(template,product){
     template=template.replace(/#Description#/g,product["description"])
     template=template.replace(/#From#/g,product["from"])
     template=template.replace(/#Nutrients#/g,product["nutrients"])
-    template=template.replace(/#id#/g,product["i d"])
+    template=template.replace(/#id#/g,product["id"])
     //#organic#
     if(product["organic"]==false){
         template=template.replace(/#organic#/g,"not-organic")
