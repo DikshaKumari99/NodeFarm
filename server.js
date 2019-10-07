@@ -57,7 +57,8 @@ var server=http.createServer(function(req,res){
         res.write("<h1>Page Not Found</h1>")
     }
 })
-server.listen(3000,function(){
+var port=process.env.PORT || 3000
+server.listen(port,function(){
     console.log("starting server at 3000")
 })
 
